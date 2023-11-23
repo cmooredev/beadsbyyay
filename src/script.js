@@ -36,7 +36,7 @@ matcapTexture.colorSpace = THREE.SRGBColorSpace;
 //Font Loader
 const fontLoader = new FontLoader();
 fontLoader.load("/fonts/Super Bubble_Regular.json", (font) => {
-  const textGeometry = new TextGeometry("beadsbyyay", {
+  const textGeometry = new TextGeometry("beadsbyyayy", {
     font: font,
     size: 0.25,
     height: 0.2,
