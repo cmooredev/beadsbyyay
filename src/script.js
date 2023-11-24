@@ -16,6 +16,7 @@ const canvas = document.querySelector("canvas.webgl");
 
 // Scene
 const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xffffff);
 
 // const axesHelper = new THREE.AxesHelper();
 // scene.add(axesHelper);
@@ -40,23 +41,23 @@ fontLoader.load("/fonts/Super Bubble_Regular.json", (font) => {
     font: font,
     size: 0.25,
     height: 0.2,
-    curveSegments: 10,
+    curveSegments: 50,
     bevelEnabled: true,
     bevelThickness: 0.01,
     bevelSize: 0.016,
     bevelOffset: 0,
-    bevelSegments: 4,
+    bevelSegments: 10,
   });
   const textGeometry2 = new TextGeometry("coming soon", {
     font: font,
     size: 0.15,
     height: 0.2,
-    curveSegments: 10,
+    curveSegments: 50,
     bevelEnabled: true,
     bevelThickness: 0.01,
     bevelSize: 0.016,
     bevelOffset: 0,
-    bevelSegments: 4,
+    bevelSegments: 10,
   });
 
   //   textGeometry.computeBoundingBox();
